@@ -1,0 +1,134 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #3c4f76;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Home Section */
+.home {
+  height: 100vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.intro h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #ffd700;
+}
+
+.cta {
+  background-color: white;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #ddd;
+}
+
+/* Sections */
+section {
+  padding: 60px 40px;
+}
+
+.about, .skills, .projects, .contact {
+  animation: slideUp 1s ease;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  background-color: #e0e0e0;
+  display: inline-block; /* makes the box fit content */
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+
+.projects .project-card {
+  background-color: #eaeaea;
+  display: inline-block; /* makes the box fit the content */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3c4f76;
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
